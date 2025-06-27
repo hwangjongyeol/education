@@ -1,8 +1,8 @@
 # node_modules (의존성 패키지)
 node_modules/
 
-# 빌드 결과물
-dist/
+# 빌드 결과물#
+#dist/
 
 # 환경변수 파일
 .env

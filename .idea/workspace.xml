@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수정">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useQuiz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Math.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/mathUtils.js" afterDir="false" />
+    <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수학">
+      <change afterPath="$PROJECT_DIR$/public/date.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/word/250624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/word/250625.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/word/250626.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useEngQuiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/EnglishUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/MainLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/MainLayout.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/English.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/English.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Math.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Math.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/English.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/English.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/hwangjong-yeol/IdeaProjects/myProjects/education/src/pages",
+    "last_opened_file_path": "/Users/hwangjong-yeol/IdeaProjects/myProjects/education/public/word",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +51,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/word" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
@@ -62,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750996358591</updated>
       <workItem from="1750996359875" duration="270000" />
-      <workItem from="1750996636750" duration="5579000" />
+      <workItem from="1750996636750" duration="10294000" />
     </task>
     <task id="LOCAL-00001" summary="수정">
       <option name="closed" value="true" />
@@ -72,7 +75,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751001235999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="수학">
+      <option name="closed" value="true" />
+      <created>1751002568052</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751002568052</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정" />
+    <MESSAGE value="수학" />
+    <option name="LAST_COMMIT_MESSAGE" value="수학" />
   </component>
 </project>

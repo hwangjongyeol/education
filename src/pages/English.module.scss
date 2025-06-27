@@ -1,0 +1,88 @@
+.container {
+  padding: clamp(12px, 2vw, 24px);
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+.selectBox, .settingsBox, .controls, .wordList {
+  margin-bottom: 14px;
+}
+
+.options label {
+  margin-right: 12px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: clamp(10px, 2vw, 14px) clamp(20px, 5vw, 28px);
+  cursor: pointer;
+  margin: 4px;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+.word {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 6px;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popupContent {
+  position: relative; // 추가
+  background: white;
+  padding: clamp(20px, 5vw, 30px);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+  min-height: 300px;
+  display: flex;          // ✅ 추가
+  flex-direction: column; // ✅ 세로 플렉스
+  justify-content: center; // ✅ 버튼 하단 고정
+}
+
+
+.popupButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.popupClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 32px;      // 크게
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;          // 진한 색
+}
+
+.popupClose:hover {
+  color: #000;
+}
+
+.popupContent div {
+  margin: 4px 0;
+  font-size: clamp(1rem, 2.5vw, 1.2em);
+}
