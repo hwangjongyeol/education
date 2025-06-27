@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수ㄴ" />
+    <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수정">
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index-DPKzpIle.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/index-BBD4RCHM.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750996358591</updated>
       <workItem from="1750996359875" duration="270000" />
-      <workItem from="1750996636750" duration="13967000" />
+      <workItem from="1750996636750" duration="14275000" />
     </task>
     <task id="LOCAL-00001" summary="수정">
       <option name="closed" value="true" />
@@ -148,7 +153,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751012754543</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="수정">
+      <option name="closed" value="true" />
+      <created>1751012946272</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751012946272</updated>
+    </task>
+    <task id="LOCAL-00012" summary="수정">
+      <option name="closed" value="true" />
+      <created>1751013065823</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1751013065823</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,9 +187,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="수정" />
     <MESSAGE value="수학" />
     <MESSAGE value="수ㄴ" />
-    <option name="LAST_COMMIT_MESSAGE" value="수ㄴ" />
+    <MESSAGE value="수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="수정" />
   </component>
 </project>
