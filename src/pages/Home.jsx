@@ -9,14 +9,10 @@ export default function Home() {
                 <h1>📚 학습</h1>
                 <div className={styles.linkWrapper}>
                     <div className={styles.linkCard}>
-                        <a href="/math">
-                            📘 지원이 수학
-                        </a>
+                        <Link to="/english">정원이 영어</Link>
                     </div>
                     <div className={styles.linkCard}>
-                        <a href="/english">
-                            📘 정원이 영어
-                        </a>
+                        <Link to="/math">지원이 수학</Link>
                     </div>
                 </div>
             </div>
