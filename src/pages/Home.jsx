@@ -9,12 +9,12 @@ export default function Home() {
                 <h1>📚 학습</h1>
                 <div className={styles.linkWrapper}>
                     <div className={styles.linkCard}>
-                        <a href="https://hwangjongyeol.github.io/test/Math.html">
+                        <a href="/math">
                             📘 지원이 수학
                         </a>
                     </div>
                     <div className={styles.linkCard}>
-                        <a href="https://hwangjongyeol.github.io/test/word.html">
+                        <a href="/english">
                             📘 정원이 영어
                         </a>
                     </div>
