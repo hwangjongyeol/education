@@ -6,7 +6,7 @@ import Math from './pages/Math';
 
 export default function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/education">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/english" element={<English />} />
