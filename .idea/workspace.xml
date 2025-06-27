@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수ㄴ">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-Bj-m8bUo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-D6TnFv-k.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useEngQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useEngQuiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/English.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/English.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/English.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/English.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Math.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Math.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/EnglishUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/EnglishUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-CE6wPnHe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-ffL4qF6v.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/date.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/word/250624.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/word/250625.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/word/250626.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750996358591</updated>
       <workItem from="1750996359875" duration="270000" />
-      <workItem from="1750996636750" duration="13237000" />
+      <workItem from="1750996636750" duration="13541000" />
     </task>
     <task id="LOCAL-00001" summary="수정">
       <option name="closed" value="true" />
@@ -91,7 +93,31 @@
       <option name="project" value="LOCAL" />
       <updated>1751009173602</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="수ㄴ">
+      <option name="closed" value="true" />
+      <created>1751012116657</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751012116657</updated>
+    </task>
+    <task id="LOCAL-00005" summary="수ㄴ">
+      <option name="closed" value="true" />
+      <created>1751012132936</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751012132936</updated>
+    </task>
+    <task id="LOCAL-00006" summary="수ㄴ">
+      <option name="closed" value="true" />
+      <created>1751012168547</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751012168547</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="수정" />
     <MESSAGE value="수학" />
-    <option name="LAST_COMMIT_MESSAGE" value="수학" />
+    <MESSAGE value="수ㄴ" />
+    <option name="LAST_COMMIT_MESSAGE" value="수ㄴ" />
   </component>
 </project>
