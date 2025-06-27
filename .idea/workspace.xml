@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수ㄴ">
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-CE6wPnHe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/index-ffL4qF6v.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/date.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/word/250624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/word/250625.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/word/250626.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +49,16 @@
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="vite.config.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/vite.config.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.vite.config.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -67,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1750996358591</updated>
       <workItem from="1750996359875" duration="270000" />
-      <workItem from="1750996636750" duration="13541000" />
+      <workItem from="1750996636750" duration="13648000" />
     </task>
     <task id="LOCAL-00001" summary="수정">
       <option name="closed" value="true" />
@@ -117,7 +118,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751012168547</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="수ㄴ">
+      <option name="closed" value="true" />
+      <created>1751012419367</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751012419367</updated>
+    </task>
+    <task id="LOCAL-00008" summary="수ㄴ">
+      <option name="closed" value="true" />
+      <created>1751012458177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751012458177</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
