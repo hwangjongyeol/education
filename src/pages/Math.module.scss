@@ -98,3 +98,53 @@ table {
   margin-top: 20px;
   font-weight: bold;
 }
+
+/* ====== 반응형 ====== */
+@media (max-width: 500px) {
+  .container {
+    padding: 5px 4px;
+    max-width: 100%;
+  }
+  .box {
+    padding: 10px 4px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .options, .group {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  button, select {
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+  table, th, td {
+    font-size: 15px;
+    padding: 8px;
+  }
+  .result {
+    font-size: 16px;
+    margin-top: 12px;
+  }
+}
+
+/* 초소형 폰 대응 */
+@media (max-width: 400px) {
+  .box {
+    padding: 4px 1px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  button, select {
+    font-size: 13px;
+    padding: 8px 5px;
+  }
+  .result {
+    font-size: 13px;
+  }
+}
