@@ -1,0 +1,25 @@
+// src/layouts/MainLayout.module.scss
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

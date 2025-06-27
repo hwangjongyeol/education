@@ -54,9 +54,10 @@ npm run build
 ---
 
 ## 5️⃣ 기타 빌드
-#### SASS
+#### SASS, react-router-dom
 ```bash
 npm install -D sass
+npm install react-router-dom
 ```
 
 

@@ -24,3 +24,11 @@ yarn-error.log*
 .idea/
 .vscode/
 *.iml
+
+.eslintcache
+.package-lock.json
+_metadata.json
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
