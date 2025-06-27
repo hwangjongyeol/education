@@ -67,34 +67,36 @@ export default function Math() {
                 </div>
 
                 <div className={styles.box}>
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>번호</th>
-                            <th>문제</th>
-                            <th>답 입력</th>
-                            <th>채점</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {problems.map((p, i) => (
-                            <tr key={i}>
-                                <td>{i + 1}</td>
-                                <td>{p.expr}</td>
-                                <td>
-                                    <input
-                                        type="number"
-                                        value={p.input}
-                                        onChange={(e) => updateAnswer(i, e.target.value)}
-                                    />
-                                </td>
-                                <td className={p.correct == null ? '' : p.correct ? styles.correct : styles.wrong}>
-                                    {p.correct == null ? '' : p.correct ? '✅ 정답' : `❌ (${p.answer})`}
-                                </td>
+                    <div className="table-container">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>문제</th>
+                                <th>답 입력</th>
+                                <th>채점</th>
                             </tr>
-                        ))}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                            {problems.map((p, i) => (
+                                <tr key={i}>
+                                    <td>{i + 1}</td>
+                                    <td>{p.expr}</td>
+                                    <td>
+                                        <input
+                                            type="number"
+                                            value={p.input}
+                                            onChange={(e) => updateAnswer(i, e.target.value)}
+                                        />
+                                    </td>
+                                    <td className={p.correct == null ? '' : p.correct ? styles.correct : styles.wrong}>
+                                        {p.correct == null ? '' : p.correct ? '✅ 정답' : `❌ (${p.answer})`}
+                                    </td>
+                                </tr>
+                            ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <div style={{ textAlign: 'center' }}>
