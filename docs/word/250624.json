@@ -1,0 +1,22 @@
+[
+  { "word": "see", "reading": "씨", "meaning": "보다" },
+  { "word": "saw", "reading": "쏘", "meaning": "보다 (see의 과거형)" },
+  { "word": "climb", "reading": "클라임", "meaning": "오르다" },
+  { "word": "follow", "reading": "팔로우", "meaning": "따라가다" },
+  { "word": "favorite", "reading": "페이버릿", "meaning": "가장 좋아하는" },
+  { "word": "where", "reading": "웨어", "meaning": "어디에" },
+  { "word": "maybe", "reading": "메이비", "meaning": "아마도" },
+  { "word": "any where", "reading": "애니웨어", "meaning": "어디든지" },
+  { "word": "find", "reading": "파인드", "meaning": "찾다" },
+  { "word": "found", "reading": "파운드", "meaning": "찾았다 (find의 과거형)" },
+  { "word": "feed", "reading": "피드", "meaning": "먹이를 주다" },
+  { "word": "hear", "reading": "히어", "meaning": "듣다" },
+  { "word": "behind", "reading": "비하인드", "meaning": "~뒤에" },
+  { "word": "ask", "reading": "애스크", "meaning": "묻다" },
+  { "word": "exactly", "reading": "이그잭틀리", "meaning": "정확히" },
+  { "word": "know", "reading": "노우", "meaning": "알다" },
+  { "word": "chase", "reading": "체이스", "meaning": "쫓다" },
+  { "word": "place", "reading": "플레이스", "meaning": "장소" },
+  { "word": "hid", "reading": "히드", "meaning": "숨었다 (hide의 과거형)" },
+  { "word": "now", "reading": "나우", "meaning": "지금" }
+]
