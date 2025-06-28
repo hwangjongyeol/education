@@ -3,13 +3,13 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   background-color: #f0f2f5;
   font-family: 'Segoe UI', sans-serif;
+
 }
 
 .header {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #007bff;
   color: white;
   text-align: center;
@@ -18,7 +18,7 @@
 
 .main {
   flex: 1;
-  padding: 2rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

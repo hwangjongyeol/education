@@ -1,16 +1,81 @@
+/* 박스 사이징 보정: padding, border 포함된 크기로 계산 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* body 및 html margin/padding 제거, 전체 100% 높이 */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
 }
 
-.wrapper, main { /* 부모 wrapper에 적용 */
-  display: block; /* flex 해제 */
+/* 기본 글꼴 및 색상, 줄 높이 설정 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  background-color: #fff;
+}
+
+/* 기본 링크 스타일 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 리스트 마커 제거 */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 이미지, 비디오 등 반응형 */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 테이블 보정 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+/* 입력 요소 폰트 상속 */
+input, textarea, select, button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* 버튼 커서 및 배경 제거 */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* 기본적으로 스크롤바 공간 확보 방지 */
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
 
 .container {
-  max-width: 600px;
   width: 100%;
   margin: 0 auto; /* 좌우 중앙 유지 */
   padding: 0;      /* 불필요한 패딩 제거 */
@@ -27,7 +92,7 @@ h1 {
 
 .box {
   background: white;
-  padding: 4px; /* 내부 여백 유지 */
+  padding: 20px; /* 내부 여백 유지 */
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   margin: 4px auto; /* 중앙 정렬 */
@@ -133,47 +198,89 @@ th {
   font-weight: bold;
 }
 
-/* ====== 반응형 ====== */
-@media (max-width: 480px) {
-  h1 {
-    text-align: center;
-    font-size: 18px;
-    padding: 4px 0; /* 6 -> 4 */
-  }
-  .box {
-    padding: 6px;
-    width: 98%;
-    max-width: none;
-    min-width: 320px; /* 모바일에서도 최소 폭 보장 */
-  }
-  .options, .group {
-    flex-direction: column;
-    gap: 4px; /* 6 -> 4 */
-    align-items: stretch;
-  }
-  button, select {
-    font-size: 13px;
-    padding: 5px 8px;
-  }
-  th, td {
-    font-size: 12px; /* 13 -> 12 */
-    padding: 4px; /* 6 -> 4 */
-  }
-  .result {
-    font-size: 13px;
-  }
+/* input style */
+.input-type01, .textarea-type01 {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-@media (max-width: 320px) {
-  h1 {
-    text-align: center;
-    font-size: 16px;
-  }
-  button, select {
-    font-size: 12px;
-    padding: 4px 6px;
-  }
-  .result {
-    font-size: 12px;
-  }
+.input-type01:focus, .textarea-type01:focus {
+  border-color: #0078d7;
+  box-shadow: 0 0 0 2px rgba(0,120,215,0.2);
+}
+
+.input-type01::placeholder {
+  color: #aaa; /* placeholder 색상 */
+  font-size: 13px;
+}
+
+.select-type01 {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  appearance: none; /* 기본 화살표 제거 */
+}
+
+.button-type01 {
+  background: #0078d7;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button-type01:hover {
+  background: #005fa3;
+}
+
+.checkbox-type01 {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-type01 input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1.5px solid #999;
+  border-radius: 4px;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.checkbox-type01 input:checked ~ .checkmark {
+  background-color: #0078d7;
+  border-color: #0078d7;
+}
+
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-type01 input:checked ~ .checkmark::after {
+  display: block;
 }

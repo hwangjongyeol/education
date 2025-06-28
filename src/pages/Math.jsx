@@ -20,6 +20,7 @@ export default function Math() {
                             {['+', '-', '*'].map(op => (
                                 <label key={op}>
                                     <input
+                                        className={styles["checkbox-type01"]}
                                         type="checkbox"
                                         value={op}
                                         checked={operators.includes(op)}
@@ -39,7 +40,7 @@ export default function Math() {
 
                         <div className={styles.group}>
                             <label>
-                                앞자릿수:
+                                자릿수:
                                 <select value={digitA} onChange={e => setDigitA(e.target.value)}>
                                     <option value="random">랜덤</option>
                                     <option value="1">1자리</option>
@@ -49,7 +50,6 @@ export default function Math() {
                                 </select>
                             </label>
                             <label>
-                                뒷자릿수:
                                 <select value={digitB} onChange={e => setDigitB(e.target.value)}>
                                     <option value="random">랜덤</option>
                                     <option value="1">1자리</option>
@@ -84,6 +84,7 @@ export default function Math() {
                                     <td>{p.expr}</td>
                                     <td>
                                         <input
+                                            className={styles["input-type01"]}
                                             type="number"
                                             value={p.input}
                                             onChange={(e) => updateAnswer(i, e.target.value)}
@@ -97,12 +98,13 @@ export default function Math() {
                             </tbody>
                         </table>
                     </div>
+                    <div style={{ textAlign: 'center' }}>
+                        <button onClick={grade}>채점하기</button>
+                    </div>
+                    <div id="result" className={styles.result}>{result}</div>
                 </div>
 
-                <div style={{ textAlign: 'center' }}>
-                    <button onClick={grade}>채점하기</button>
-                </div>
-                <div id="result" className={styles.result}>{result}</div>
+
             </div>
         </MainLayout>
     );
