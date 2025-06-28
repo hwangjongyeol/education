@@ -17,7 +17,7 @@ export default function Math() {
                 <div className={styles.box}>
                     <div className={styles.options}>
                         <div className={styles.group}>
-                            {['+', '-', '*'].map(op => (
+                            {['+', '-', '*', '/'].map(op => (
                                 <label key={op}>
                                     <input
                                         className={styles["checkbox-type01"]}
@@ -33,7 +33,10 @@ export default function Math() {
                                             );
                                         }}
                                     />
-                                    {op === '+' ? '➕ 덧셈' : op === '-' ? '➖ 뺄셈' : '✖️ 곱셈'}
+                                    {op === '+' ? '➕' :
+                                        op === '-' ? '➖' :
+                                            op === '*' ? '✖️' :
+                                                '➗'}
                                 </label>
                             ))}
                         </div>
@@ -71,17 +74,17 @@ export default function Math() {
                         <table>
                             <thead>
                             <tr>
-                                <th>번호</th>
-                                <th>문제</th>
-                                <th>답 입력</th>
-                                <th>채점</th>
+                                <th style={{ width: '10%' }}>번호</th>
+                                <th style={{ width: '50%' }}>문제</th>
+                                <th style={{ width: '25%' }}>답 입력</th>
+                                <th style={{ width: '15%' }}>채점</th>
                             </tr>
                             </thead>
                             <tbody>
                             {problems.map((p, i) => (
                                 <tr key={i}>
                                     <td>{i + 1}</td>
-                                    <td>{p.expr}</td>
+                                    <td>{p.displayExpr}</td>
                                     <td>
                                         <input
                                             className={styles["input-type01"]}
@@ -98,7 +101,7 @@ export default function Math() {
                             </tbody>
                         </table>
                     </div>
-                    <div style={{ textAlign: 'center' }}>
+                    <div style={{ textAlign: 'center', marginTop: '16px'}}>
                         <button onClick={grade}>채점하기</button>
                     </div>
                     <div id="result" className={styles.result}>{result}</div>
