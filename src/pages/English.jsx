@@ -26,17 +26,14 @@ function WordCard({ word, hideTargets, speak, globalHideChangeTrigger }) {
     };
 
     return (
-        <div className={`${styles.word} ${styles[result]}`} onClick={() => {
-            if (hideTargets.word && input) checkAnswer();
-            setRevealed(true);
-        }}>
+        <div className={`${styles.word} ${styles[result]}`}>
             <div>
                 <div className={hideTargets.word && !revealed ? styles.hidden : ''}>{word.word}</div>
                 <div className={hideTargets.reading && !revealed ? styles.hidden : ''}>[{word.reading}]</div>
                 <div className={hideTargets.meaning && !revealed ? styles.hidden : ''}>{word.meaning}</div>
             </div>
             <button className={styles.soundBtn} onClick={e => { e.stopPropagation(); speak(word.word); }}>🔊</button>
-            {hideTargets.word &&
+           {hideTargets.word &&
                 <div className={styles.inputBox}>
                     <input
                         type="text"
@@ -48,6 +45,8 @@ function WordCard({ word, hideTargets, speak, globalHideChangeTrigger }) {
                     />
                 </div>
             }
+            <button className={styles.viewButton} onClick={() => {if (hideTargets.word && input) checkAnswer();setRevealed(true);}}>🔍</button>
+
         </div>
     );
 }
@@ -112,6 +111,7 @@ export default function English() {
         setResetTrigger(Date.now());
     };
 
+    /** 체크 박스 히든 여부 이벤트 **/
     const handleCheckChange = e => {
         quiz.handleCheckChange(e);
         setResetTrigger(Date.now());  // 무조건 추가!
@@ -124,16 +124,19 @@ export default function English() {
         setResetTrigger(Date.now());
     };
 
+    /** 단어 파일 교체 **/
     const handleFileSelect = (file) => {
         quiz.handleFileSelect(file);   // 기존 단어장 파일 바꾸는 로직
         setResetTrigger(Date.now());   // ★ 모든 카드 revealed 등 초기화!
     };
 
+    /** 팝업 닫기 **/
     const handlePopupClose = () => {
         setPopupVisible(false);
         quiz.resetUnseen();
     };
 
+    /** 팝업 다음 이벤트 **/
     const handlePopupNext = () => {
         if (!quiz.unseenWords.length) {
             handlePopupClose();
