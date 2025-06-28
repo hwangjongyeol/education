@@ -206,6 +206,8 @@ th {
   border: 1px solid #ccc;
   padding: 8px 12px;
   border-radius: 4px;
+  width: 100px; /* 또는 60~100px 필요에 따라 */
+  max-width: 100%;
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 

@@ -75,8 +75,8 @@ export default function Math() {
                             <thead>
                             <tr>
                                 <th style={{ width: '10%' }}>번호</th>
-                                <th style={{ width: '50%' }}>문제</th>
-                                <th style={{ width: '25%' }}>답 입력</th>
+                                <th style={{ width: '45%' }}>문제</th>
+                                <th style={{ width: '30%' }}>답 입력</th>
                                 <th style={{ width: '15%' }}>채점</th>
                             </tr>
                             </thead>
