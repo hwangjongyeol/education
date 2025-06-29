@@ -1,3 +1,4 @@
+import { fetchMathExplanation } from '../utils/gptExplain';
 import { useState } from 'react';
 import styles from './Math.module.scss';
 import MainLayout from '../layouts/MainLayout';
@@ -11,6 +12,20 @@ export default function Math() {
     const [remainderOption, setRemainderOption] = useState('0');
     const [remainderLimit, setRemainderLimit] = useState('5');
     const { problems, result, generate, updateAnswer, grade } = useQuiz();
+
+    const [explanation, setExplanation] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleExplain = async (p, i) => {
+        setExplanation('⏳ GPT로 풀이를 불러오는 중입니다...');
+        setIsModalOpen(true);
+        try {
+            const html = await fetchMathExplanation(p.displayExpr);
+            setExplanation(html);
+        } catch (error) {
+            setExplanation('⚠️ GPT 서버 연결에 실패했습니다. 잠시 후 다시 시도해 주세요.');
+        }
+    };
 
     return (
         <MainLayout>
@@ -140,6 +155,13 @@ export default function Math() {
                                     </td>
                                     <td className={p.correct == null ? '' : p.correct ? styles.correct : styles.wrong}>
                                         {p.correct == null ? '' : p.correct ? '✅ 정답' : `❌`}
+                                        <button
+                                            className={styles.explainBtn}
+                                            style={{ marginTop: '4px', display: 'block' }}
+                                            onClick={() => handleExplain(p, i)}
+                                        >
+                                            풀이 보기
+                                        </button>
                                     </td>
                                 </tr>
                             ))}
@@ -154,6 +176,38 @@ export default function Math() {
 
 
             </div>
+            {isModalOpen && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    background: 'rgba(0,0,0,0.5)',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    zIndex: 1000
+                }}
+                onClick={() => setIsModalOpen(false)}
+                >
+                    <div
+                        style={{
+                            background: '#fff',
+                            padding: '20px',
+                            borderRadius: '8px',
+                            maxWidth: '500px',
+                            maxHeight: '80%',
+                            overflowY: 'auto'
+                        }}
+                        onClick={(e) => e.stopPropagation()}
+                    >
+                        <h3>문제 풀이</h3>
+                        <div
+                            style={{ fontSize: '14px' }}
+                            dangerouslySetInnerHTML={{ __html: explanation }}
+                        ></div>
+                        <button onClick={() => setIsModalOpen(false)}>닫기</button>
+                    </div>
+                </div>
+            )}
         </MainLayout>
     );
 }
