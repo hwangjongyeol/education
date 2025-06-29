@@ -7,13 +7,13 @@ export function useQuiz() {
     const [problems, setProblems] = useState([]);
     const [result, setResult] = useState('');
 
-    const generate = (digitA, digitB, operators) => {
+    const generate = (mode, digitA, digitB, operators, remainderOption, remainderLimit) => {
         if (!operators || operators.length === 0) {
             alert('하나 이상의 연산을 선택하세요.');
             return;
         }
 
-        const newProblems = createMathProblems(10, digitA, digitB, operators);
+        const newProblems = createMathProblems(mode, 10, digitA, digitB, operators, remainderOption, remainderLimit);
         setProblems(newProblems);
         setResult('');
     };
