@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수정">
-      <change afterPath="$PROJECT_DIR$/src/utils/api/gpt-explain.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/gptExplain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/index-DjN0Jm5k.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/index-IqXCrT9T.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Math.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Math.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/gptExplain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/gptExplain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/mathUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mathUtils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +171,7 @@
       <workItem from="1751070846505" duration="5761000" />
       <workItem from="1751116799339" duration="832000" />
       <workItem from="1751179300524" duration="4923000" />
-      <workItem from="1751192443582" duration="1441000" />
+      <workItem from="1751192443582" duration="2817000" />
     </task>
     <task id="LOCAL-00001" summary="수정">
       <option name="closed" value="true" />
@@ -378,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751184215336</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="수정">
+      <option name="closed" value="true" />
+      <created>1751193981365</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1751193981365</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,4 +1,113 @@
 /**
+ * Generates a simple step-by-step explanation for a math problem for elementary students.
+ * Supports +, -, ×, ÷ and returns HTML-safe string for layer popup.
+ * @param {string} problemText - e.g., "4+1", "5-1", "5×1", "5÷1"
+ * @returns {string} HTML-formatted explanation
+ */
+export function generateSimpleExplanation(problemText) {
+    let [_, left, operator, right] = problemText.match(/(\d+)\s*([\+\-\×\÷])\s*(\d+)/) || [];
+    left = parseInt(left, 10);
+    right = parseInt(right, 10);
+    let result = 0;
+    let explanation = "";
+
+    let operatorSymbol = `<span style="font-size:0.9em;">${operator}</span>`;
+
+    if (operator === '+') {
+        result = left + right;
+        let stepExplanation = '';
+        if (left >= 10 && right >= 10) {
+            const rightStep = Math.floor(right / 10) * 10;
+            const rightRemain = right - rightStep;
+            const tempSum = left + rightStep;
+            stepExplanation = `
+            <ul style="padding-left:16px; margin:6px 0;">
+                <li>${left}에 ${rightStep}을 더합니다: ${left} + ${rightStep} = ${tempSum}</li>
+                <li>그 다음 ${rightRemain}을 더합니다: ${tempSum} + ${rightRemain} = ${result}</li>
+            </ul>`;
+        } else {
+            stepExplanation = `
+            <ul style="padding-left:16px; margin:6px 0;">
+                <li>${left}에 ${right}을 더합니다.</li>
+            </ul>`;
+        }
+        explanation = `
+        <div style="line-height:1.6;">
+            <b>덧셈 풀이 과정</b><br/>
+            ${stepExplanation}
+            ${left} ${operatorSymbol} ${right} = <b>${result}</b>
+        </div>`;
+    } else if (operator === '-') {
+        result = left - right;
+        // 10단위 단계 풀이용
+        let stepExplanation = '';
+        if (left >= 10 && right >= 10) {
+            const leftStep = Math.floor(left / 10) * 10;
+            const leftRemain = left - leftStep;
+            const rightStep = Math.floor(right / 10) * 10;
+            const rightRemain = right - rightStep;
+            stepExplanation = `
+            <ul style="padding-left:16px; margin:6px 0;">
+                <li>${left}에서 ${rightStep}을 먼저 뺍니다: ${left} - ${rightStep} = ${left - rightStep}</li>
+                <li>그 다음 ${rightRemain}을 빼줍니다: ${left - rightStep} - ${rightRemain} = ${result}</li>
+            </ul>`;
+        } else {
+            stepExplanation = `
+            <ul style="padding-left:16px; margin:6px 0;">
+                <li>${left}에서 ${right}을 빼면 됩니다.</li>
+            </ul>`;
+        }
+        explanation = `
+        <div style="line-height:1.6;">
+            <b>뺄셈 풀이 과정</b><br/>
+            ${stepExplanation}
+            ${left} ${operatorSymbol} ${right} = <b>${result}</b>
+        </div>`;
+    } else if (operator === '×') {
+        result = left * right;
+        let stepExplanation = '';
+        if (left >= 10 && right < 10) {
+            const leftStep = Math.floor(left / 10) * 10;
+            const leftRemain = left - leftStep;
+            const firstMul = leftStep * right;
+            const secondMul = leftRemain * right;
+            stepExplanation = `
+            <ul style="padding-left:16px; margin:6px 0;">
+                <li>${leftStep} × ${right} = ${firstMul}</li>
+                <li>${leftRemain} × ${right} = ${secondMul}</li>
+                <li>두 결과를 더합니다: ${firstMul} + ${secondMul} = ${result}</li>
+            </ul>`;
+        } else {
+            stepExplanation = `
+            <ul style="padding-left:16px; margin:6px 0;">
+                <li>${left}에 ${right}을 곱합니다.</li>
+            </ul>`;
+        }
+        explanation = `
+        <div style="line-height:1.6;">
+            <b>곱셈 풀이 과정</b><br/>
+            ${stepExplanation}
+            ${left} ${operatorSymbol} ${right} = <b>${result}</b>
+        </div>`;
+    } else if (operator === '÷') {
+        result = (left / right).toFixed(2);
+        let stepExplanation = `
+        <ul style="padding-left:16px; margin:6px 0;">
+            <li>${left}을 ${right}로 나눕니다.</li>
+        </ul>`;
+        explanation = `
+        <div style="line-height:1.6;">
+            <b>나눗셈 풀이 과정</b><br/>
+            ${stepExplanation}
+            ${left} ${operatorSymbol} ${right} = <b>${result}</b>
+        </div>`;
+    } else {
+        explanation = `<div>지원하지 않는 연산자입니다.</div>`;
+    }
+
+    return explanation;
+}
+/**
  * Create math problems with different modes.
  * @param {'basic'|'column'|'fraction'|'fraction2'} mode - Problem mode
  * @param {number} count

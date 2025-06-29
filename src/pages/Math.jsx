@@ -1,4 +1,4 @@
-import { fetchMathExplanation } from '../utils/gptExplain';
+import { generateSimpleExplanation } from '../utils/mathUtils';
 import { useState } from 'react';
 import styles from './Math.module.scss';
 import MainLayout from '../layouts/MainLayout';
@@ -16,15 +16,10 @@ export default function Math() {
     const [explanation, setExplanation] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const handleExplain = async (p, i) => {
-        setExplanation('⏳ GPT로 풀이를 불러오는 중입니다...');
+    const handleExplain = (p, i) => {
         setIsModalOpen(true);
-        try {
-            const html = await fetchMathExplanation(p.displayExpr);
-            setExplanation(html);
-        } catch (error) {
-            setExplanation('⚠️ GPT 서버 연결에 실패했습니다. 잠시 후 다시 시도해 주세요.');
-        }
+        const explanationHtml = generateSimpleExplanation(p.displayExpr.replace(/<[^>]*>/g, ''));
+        setExplanation(explanationHtml);
     };
 
     return (
