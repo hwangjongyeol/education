@@ -20,8 +20,23 @@ export function createMathProblems(count, digitA, digitB, operators) {
         }
 
         const expr = `${first} ${op} ${second}`;
-        const displayExpr = op === '/' ? `${first} ➗ ${second}` : expr; // 화면 표시용
+        //const displayExpr = op === '/' ? `${first} ➗ ${second}` : expr; // 화면 표시용
         const answer = eval(expr);
+
+        const smallOp = (symbol) => `<span style="font-size: 0.9em;">${symbol}</span>`;
+
+        let displayExpr;
+        if (op === '/') {
+            displayExpr = `${first} ${smallOp('÷')} ${second}`;
+        } else if (op === '*') {
+            displayExpr = `${first} ${smallOp('×')} ${second}`;
+        } else if (op === '+') {
+            displayExpr = `${first} ${smallOp('+')} ${second}`;
+        } else if (op === '-') {
+            displayExpr = `${first} ${smallOp('-')} ${second}`;
+        } else {
+            displayExpr = expr;
+        }
 
         problems.push({
             expr,          // 내부 연산용

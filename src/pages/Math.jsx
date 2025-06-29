@@ -84,7 +84,7 @@ export default function Math() {
                             {problems.map((p, i) => (
                                 <tr key={i}>
                                     <td>{i + 1}</td>
-                                    <td>{p.displayExpr}</td>
+                                    <td dangerouslySetInnerHTML={{ __html: p.displayExpr }}></td>
                                     <td>
                                         <input
                                             className={styles["input-type01"]}
@@ -94,7 +94,7 @@ export default function Math() {
                                         />
                                     </td>
                                     <td className={p.correct == null ? '' : p.correct ? styles.correct : styles.wrong}>
-                                        {p.correct == null ? '' : p.correct ? '✅ 정답' : `❌ (${p.answer})`}
+                                        {p.correct == null ? '' : p.correct ? '✅ 정답' : `❌`}
                                     </td>
                                 </tr>
                             ))}
@@ -112,3 +112,6 @@ export default function Math() {
         </MainLayout>
     );
 }
+//<td className={p.correct == null ? '' : p.correct ? styles.correct : styles.wrong}>
+//                                         {p.correct == null ? '' : p.correct ? '✅ 정답' : `❌ (${p.answer})`}
+//                                     </td>
