@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="수정">
+    <list default="true" id="80e42a31-4ede-444d-aa56-ee1c48a39e92" name="변경" comment="ㅁ">
+      <change afterPath="$PROJECT_DIR$/docs/word/250701.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/word/250701.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/assets/index-DjN0Jm5k.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/assets/index-IqXCrT9T.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Math.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Math.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/gptExplain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/gptExplain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/mathUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/mathUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/date.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/date.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,27 +27,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hwangjong-yeol/IdeaProjects/myProjects/education/docs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/hwangjong-yeol/Desktop/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/hwangjong-yeol/IdeaProjects/myProjects/education/public/word",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/hwangjong-yeol/Desktop/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/public/word" />
+      <recent name="$PROJECT_DIR$/docs/word" />
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/pages" />
     </key>
@@ -171,7 +169,8 @@
       <workItem from="1751070846505" duration="5761000" />
       <workItem from="1751116799339" duration="832000" />
       <workItem from="1751179300524" duration="4923000" />
-      <workItem from="1751192443582" duration="2817000" />
+      <workItem from="1751192443582" duration="2829000" />
+      <workItem from="1751381549400" duration="131000" />
     </task>
     <task id="LOCAL-00001" summary="수정">
       <option name="closed" value="true" />
@@ -389,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751193981365</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ㅁ">
+      <option name="closed" value="true" />
+      <created>1751195272467</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1751195272467</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +417,7 @@
     <MESSAGE value="수학" />
     <MESSAGE value="수ㄴ" />
     <MESSAGE value="수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정" />
+    <MESSAGE value="ㅁ" />
+    <option name="LAST_COMMIT_MESSAGE" value="ㅁ" />
   </component>
 </project>
