@@ -1,0 +1,16 @@
+[
+  { "word": "read a book", "reading": "리드 어 북", "meaning": "책을 읽다" },
+  { "word": "save", "reading": "세이브", "meaning": "구하다, 저장하다" },
+  { "word": "time", "reading": "타임", "meaning": "시간" },
+  { "word": "tomorrow", "reading": "투모로우", "meaning": "내일" },
+  { "word": "each other", "reading": "이치 아더", "meaning": "서로" },
+  { "word": "present", "reading": "프레즌트", "meaning": "선물" },
+  { "word": "go", "reading": "고우", "meaning": "가다" },
+  { "word": "went", "reading": "웬트", "meaning": "갔다 (go의 과거형)" },
+  { "word": "see", "reading": "씨", "meaning": "보다" },
+  { "word": "saw", "reading": "소", "meaning": "보았다 (see의 과거형)" },
+  { "word": "find", "reading": "파인드", "meaning": "찾다" },
+  { "word": "voice", "reading": "보이스", "meaning": "목소리" },
+  { "word": "hear", "reading": "히어", "meaning": "듣다" },
+  { "word": "heard", "reading": "허드", "meaning": "들었다 (hear의 과거형)" }
+]
