@@ -1,0 +1,23 @@
+[
+  { "word": "I'll", "reading": "아일", "meaning": "~할 것이다" },
+  { "word": "join", "reading": "조인", "meaning": "함께하다" },
+  { "word": "learn", "reading": "런", "meaning": "배우다" },
+  { "word": "visit", "reading": "비짓", "meaning": "방문하다" },
+  { "word": "clean", "reading": "클린", "meaning": "청소하다" },
+  { "word": "pick up", "reading": "픽 업", "meaning": "줍다" },
+  { "word": "camping", "reading": "캠핑", "meaning": "캠핑" },
+  { "word": "tour", "reading": "투어", "meaning": "여행" },
+  { "word": "with", "reading": "위드", "meaning": "~와 함께" },
+  { "word": "family", "reading": "패밀리", "meaning": "가족" },
+  { "word": "grandparents", "reading": "그랜드패런츠", "meaning": "조부모님" },
+  { "word": "cousin", "reading": "커즌", "meaning": "사촌" },
+  { "word": "space", "reading": "스페이스", "meaning": "우주" },
+  { "word": "summer", "reading": "써머", "meaning": "여름" },
+  { "word": "vacation", "reading": "베케이션", "meaning": "방학, 휴가" },
+  { "word": "What will you do this summer?", "reading": "왓 윌 유 두 디스 써머", "meaning": "이번 여름에 뭐 할거야?" },
+  { "word": "I will go camping.", "reading": "아이 윌 고우 캠핑", "meaning": "나는 캠핑 갈 거야." },
+  { "word": "I will take a bike tour.", "reading": "아이 윌 테이크 어 바이크 투어", "meaning": "자전거 여행을 할 거야." },
+  { "word": "I will visit my grandparents.", "reading": "아이 윌 비짓 마이 그랜드패런츠", "meaning": "조부모님을 방문할 거야." },
+  { "word": "I will learn Chinese.", "reading": "아이 윌 런 차이니즈", "meaning": "중국어를 배울 거야." },
+  { "word": "Have a good time.", "reading": "해브 어 굿 타임", "meaning": "좋은 시간 보내." }
+]
